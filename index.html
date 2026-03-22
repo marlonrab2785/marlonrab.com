@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marlon Rábago — Senior Product Designer</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -450,6 +453,7 @@ nav.scrolled {
   justify-content: center;
   margin-bottom: 24px;
   overflow: hidden;
+  aspect-ratio: 1;
 }
 .about-avatar img {
   width: 100%;
@@ -648,6 +652,11 @@ nav.scrolled {
 .tool-item svg {
   width: 40px;
   height: 40px;
+}
+.tool-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
 /* ===== PORTFOLIO ===== */
@@ -1315,52 +1324,20 @@ nav.scrolled {
     </div>
     
     <div class="tools-grid animate-on-scroll">
-      <!-- Figma -->
-      <div class="tool-item" title="Figma">
-        <svg viewBox="0 0 38 57" fill="none">
-          <path d="M19 28.5a9.5 9.5 0 119 9.5 9.5 9.5 0 01-9.5-9.5z" fill="#1ABCFE"/>
-          <path d="M0 47.5A9.5 9.5 0 019.5 38H19v9.5a9.5 9.5 0 11-19 0z" fill="#0ACF83"/>
-          <path d="M19 0v19h9.5a9.5 9.5 0 000-19H19z" fill="#FF7262"/>
-          <path d="M0 9.5A9.5 9.5 0 009.5 19H19V0H9.5A9.5 9.5 0 000 9.5z" fill="#F24E1E"/>
-          <path d="M0 28.5A9.5 9.5 0 009.5 38H19V19H9.5A9.5 9.5 0 000 28.5z" fill="#A259FF"/>
-        </svg>
+      <div class="tool-item">
+        <img src="images/tool1.png" alt="Tool 1">
       </div>
-      <!-- VS Code -->
-      <div class="tool-item" title="VS Code">
-        <svg viewBox="0 0 256 256" fill="none">
-          <path d="M180.8 252.3L24.4 195.9a16.1 16.1 0 01-10-11.1L.8 135.5a16 16 0 015.5-16.4L174.5 3.7a16 16 0 0125.2 8.3l55.5 196a16 16 0 01-7.5 18.3l-49.3 28a16 16 0 01-17.6-2z" fill="#0065A9"/>
-          <path d="M180.8 252.3L24.4 195.9a16.1 16.1 0 01-10-11.1L.8 135.5a16 16 0 015.5-16.4l48.6-40.4 126 76.6-55.5 78.9a16 16 0 0025.2 8.3l55.5-28z" fill="#007ACC"/>
-          <path d="M180.8 3.7a16 16 0 00-25.2 8.3L54.9 78.7l125.9 76.6V12a16 16 0 00-7.5-8.3z" fill="#1F9CF0"/>
-        </svg>
+      <div class="tool-item">
+        <img src="images/tool2.png" alt="Tool 2">
       </div>
-      <!-- HTML/CSS -->
-      <div class="tool-item" title="HTML & CSS">
-        <svg viewBox="0 0 48 48">
-          <path fill="#E44D26" d="M6 4l3.5 39.3L24 48l14.5-4.7L42 4H6z"/>
-          <path fill="#F16529" d="M24 44.2l11.7-3.3L39 8H24v36.2z"/>
-          <path fill="#fff" d="M24 18h8.2l-.5 6H24v5.5h7.2l-.7 7.5L24 39v5.8l11.3-3.1.1-.8L37 22.5l.2-2H24V18z"/>
-          <path fill="#EBEBEB" d="M24 18H16l.4 4.5H24V18zm0 13.5h-.1l-6-1.6-.4-4.4h-4.7l.7 8.9 10.5 2.9v-5.8z"/>
-        </svg>
+      <div class="tool-item">
+        <img src="images/tool3.png" alt="Tool 3">
       </div>
-      <!-- AI / Claude -->
-      <div class="tool-item" title="AI-Assisted Workflows">
-        <svg viewBox="0 0 48 48" fill="none" stroke="var(--blue-deep)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="24" cy="24" r="18"/>
-          <path d="M24 14v10l7 5"/>
-          <circle cx="24" cy="24" r="3" fill="var(--blue-deep)"/>
-          <path d="M14 10l2 4M34 10l-2 4M14 38l2-4M34 38l-2-4"/>
-        </svg>
+      <div class="tool-item">
+        <img src="images/tool4.png" alt="Tool 4">
       </div>
-      <!-- Prototyping -->
-      <div class="tool-item" title="Prototyping & Testing">
-        <svg viewBox="0 0 48 48" fill="none" stroke="var(--blue-deep)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="8" y="6" width="32" height="36" rx="4"/>
-          <line x1="8" y1="14" x2="40" y2="14"/>
-          <circle cx="14" cy="10" r="1.5" fill="var(--blue-deep)" stroke="none"/>
-          <circle cx="20" cy="10" r="1.5" fill="var(--blue-deep)" stroke="none"/>
-          <rect x="14" y="20" width="20" height="10" rx="2"/>
-          <line x1="14" y1="36" x2="34" y2="36"/>
-        </svg>
+      <div class="tool-item">
+        <img src="images/tool5.png" alt="Tool 5">
       </div>
     </div>
   </div>
